@@ -1,0 +1,27 @@
+{
+  "agent_type": "ClaudeCodeAgent",
+  "date_range": {
+    "init_date": "2025-10-01",
+    "end_date": "2025-10-21"
+  },
+  "models": [
+    {
+      "name": "claude-code-agent",
+      "basemodel": "n/a",
+      "signature": "claude-code-agent",
+      "enabled": true,
+      "mcp_servers": ["sequential-thinking"],
+      "cli_timeout": 600,
+      "use_cache": false
+    }
+  ],
+  "agent_config": {
+    "max_steps": 1,
+    "max_retries": 3,
+    "base_delay": 2.0,
+    "initial_cash": 10000.0
+  },
+  "log_config": {
+    "log_path": "./data/agent_data"
+  }
+}

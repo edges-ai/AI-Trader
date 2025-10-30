@@ -17,6 +17,31 @@ AGENT_REGISTRY = {
         "module": "agent.base_agent.base_agent",
         "class": "BaseAgent"
     },
+    "ClaudeCodeAgent": {
+        "module": "agent.claude_code_agent.claude_code_agent",
+        "class": "ClaudeCodeAgent"
+    },
+    # Trading strategy agents (separate directories)
+    "MomentumNASDAQAgent": {
+        "module": "agent.momentum_agent.momentum_agent",
+        "class": "MomentumNASDAQAgent"
+    },
+    "ValueNASDAQAgent": {
+        "module": "agent.value_agent.value_agent",
+        "class": "ValueNASDAQAgent"
+    },
+    "PortfolioNASDAQAgent": {
+        "module": "agent.portfolio_agent.portfolio_agent",
+        "class": "PortfolioNASDAQAgent"
+    },
+    "AlphaNASDAQAgent": {
+        "module": "agent.alpha_agent.alpha_agent",
+        "class": "AlphaNASDAQAgent"
+    },
+    "FactorNASDAQAgent": {
+        "module": "agent.factor_agent.factor_agent",
+        "class": "FactorNASDAQAgent"
+    },
 }
 
 
